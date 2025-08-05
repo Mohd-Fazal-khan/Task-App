@@ -3,13 +3,14 @@ import { initializeApp } from 'firebase/app';
 import { getAuth, initializeAuth,getReactNativePersistence} from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore'
 import AsyncStorage from "@react-native-async-storage/async-storage";
-const firebaseConfig = {
-   apiKey: "AIzaSyDWjv5u8yTGKgJB1F1PuHv-_tennr3FGEk",
-  authDomain: "task-f3dbe.firebaseapp.com",
-  projectId: "task-f3dbe",
-  storageBucket: "task-f3dbe.firebasestorage.app",
-  messagingSenderId: "1009129073894",
-  appId: "1:1009129073894:web:0031367b81c122fea49f27"
+// task/firebase/config.js
+export const firebaseConfig = {
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_AUTH_DOMAIN",
+  projectId: "YOUR_PROJECT_ID",
+  storageBucket: "YOUR_STORAGE_BUCKET",
+  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+  appId: "YOUR_APP_ID",
 };
 
 const app = initializeApp(firebaseConfig);
