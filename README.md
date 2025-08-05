@@ -95,7 +95,7 @@ task/
 
 ## Scripts
 
-- `npm start` - Start Expo development server
+- `npx expo start` - Start Expo development server
 - `npm run lint` - Run ESLint
 - `npm run reset` - Run project reset script
 
