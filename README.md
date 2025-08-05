@@ -67,6 +67,36 @@ task/
 
 ## Getting Started
 
+[//]: # "Firebase Setup"
+
+## Firebase Setup
+
+This project uses Firebase for authentication and data storage.
+
+### Configuration
+
+1. Go to [Firebase Console](https://console.firebase.google.com/) and create a new project.
+2. In your project, navigate to **Project Settings** > **General** and add a new web app.
+3. Copy your Firebase configuration and replace the values in `firebase/config.js`:
+   ```js
+   // task/firebase/config.js
+   export const firebaseConfig = {
+     apiKey: "YOUR_API_KEY",
+     authDomain: "YOUR_AUTH_DOMAIN",
+     projectId: "YOUR_PROJECT_ID",
+     storageBucket: "YOUR_STORAGE_BUCKET",
+     messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+     appId: "YOUR_APP_ID",
+   };
+   ```
+4. Install Firebase SDK:
+   ```sh
+   npm install firebase
+   ```
+5. Import and initialize Firebase in your app as needed.
+
+Refer to the [Firebase documentation](https://firebase.google.com/docs/web/setup) for more details.
+
 ### Prerequisites
 
 - Node.js >= 14.x
@@ -77,7 +107,7 @@ task/
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/Mohd-Fazal-khan/Task-App.git
+   git clone https://github.com/Mohd-Fazal-khan/Task-App
    cd task
    ```
 2. Install dependencies:
@@ -86,7 +116,7 @@ task/
    ```
 3. Start the development server:
    ```sh
-   expo start
+   npx expo start
    ```
 
 ### Running on Device/Emulator
@@ -95,7 +125,7 @@ task/
 
 ## Scripts
 
-- `npx expo start` - Start Expo development server
+- `npm start` - Start Expo development server
 - `npm run lint` - Run ESLint
 - `npm run reset` - Run project reset script
 
