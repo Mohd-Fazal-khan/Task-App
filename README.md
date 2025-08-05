@@ -77,7 +77,7 @@ task/
 
 1. Clone the repository:
    ```sh
-   git clone <repo-url>
+   git clone https://github.com/Mohd-Fazal-khan/Task-App
    cd task
    ```
 2. Install dependencies:
