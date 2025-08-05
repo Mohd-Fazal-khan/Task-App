@@ -1,43 +1,123 @@
-# Welcome to your Expo app 👋
+# Task Management App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A professional cross-platform task management application built with React Native and Expo. This app helps users organize, track, and manage their daily tasks efficiently with features like tagging, filtering, calendar view, and authentication.
 
-## Get started
+## Features
 
-1. Install dependencies
+- **User Authentication**: Sign up, log in, and password recovery screens.
+- **Task Management**: Add, edit, delete, and view tasks.
+- **Tagging & Filtering**: Assign tags to tasks and filter them easily.
+- **Calendar View**: Visualize tasks in a calendar format.
+- **Modern UI**: Clean, responsive design with custom fonts and icons.
+- **Navigation**: Intuitive tab and stack navigation.
+- **Expo Integration**: Easy development and deployment with Expo.
 
-   ```bash
-   npm install
-   ```
+## Folder Structure
 
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+task/
+├── app.json
+├── eslint.config.js
+├── expo-env.d.ts
+├── package.json
+├── README.md
+├── tsconfig.json
+├── app/
+│   ├── App.tsx
+│   ├── components/
+│   │   ├── FilterModal.tsx
+│   │   ├── TaskItem.tsx
+│   │   ├── TaskListSection.tsx
+│   │   └── TaskTag.tsx
+│   ├── constants/
+│   │   └── Colors.tsx
+│   ├── navigation/
+│   │   ├── AppNavigator.tsx
+│   │   └── HomeTabs.tsx
+│   ├── screens/
+│   │   ├── auth/
+│   │   │   ├── ForgotPasswordScreen.tsx
+│   │   │   ├── LetsGoScreen.tsx
+│   │   │   ├── LoginScreen.tsx
+│   │   │   └── SignUpScreen.tsx
+│   │   └── home/
+│   │       ├── AddTaskScreen.tsx
+│   │       ├── AllTaskScreen.tsx
+│   │       └── CalendarViewScreen.tsx
+│   └── utils/
+│       └── formatTags.ts
+├── assets/
+│   ├── fonts/
+│   │   └── SpaceMono-Regular.ttf
+│   └── images/
+│       ├── adaptive-icon.png
+│       ├── favicon.png
+│       ├── icon.png
+│       ├── img.png
+│       ├── partial-react-logo.png
+│       ├── react-logo.png
+│       ├── react-logo@2x.png
+│       ├── react-logo@3x.png
+│       └── splash-icon.png
+├── firebase/
+│   └── config.js
+└── scripts/
+    └── reset-project.js
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Getting Started
 
-## Learn more
+### Prerequisites
 
-To learn more about developing your project with Expo, look at the following resources:
+- Node.js >= 14.x
+- npm >= 6.x
+- Expo CLI (`npm install -g expo-cli`)
+
+### Installation
+
+1. Clone the repository:
+   ```sh
+   git clone <repo-url>
+   cd task
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Start the development server:
+   ```sh
+   expo start
+   ```
+
+### Running on Device/Emulator
+
+- Use Expo Go app on your mobile device or run on an emulator using Expo CLI.
+
+## Scripts
+
+- `npm start` - Start Expo development server
+- `npm run lint` - Run ESLint
+- `npm run reset` - Run project reset script
+
+## Technologies Used
+
+- **React Native**
+- **Expo**
+- **TypeScript**
+- **Firebase** (for authentication and data storage)
+- **ESLint** (for code quality)
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Contact
+
+For questions or support, please contact [your-email@example.com].
 
 - [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
 - [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
